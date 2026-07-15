@@ -2,8 +2,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { MdEmail, MdPhone } from "react-icons/md";
 
-import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
+import { LINKS, NAV_LINKS } from "@/constants";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
       {/* Navbar Container */}
-      <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
+      <div className="relative w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
         <Link
           href="#about-me"
@@ -25,11 +26,11 @@ export const Navbar = () => {
             draggable={false}
             className="cursor-pointer"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">John Doe</div>
+          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">Arun.S</div>
         </Link>
 
         {/* Web Navbar */}
-        <div className="hidden md:flex w-[500px] h-full flex-row items-center justify-between md:mr-20">
+        <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-[500px] h-full flex-row items-center justify-between">
           <div className="flex items-center justify-between w-full h-auto border-[rgba(112,66,248,0.38)] bg-[rgba(3,0,20,0.37)] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             {NAV_LINKS.map((link) => (
               <Link
@@ -41,30 +42,20 @@ export const Navbar = () => {
               </Link>
             ))}
 
-            {/* Source Code */}
-            <Link
-              href={LINKS.sourceCode}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
-            >
-              Source Code
-            </Link>
+          
           </div>
         </div>
 
-        {/* Social Icons (Web) */}
-        <div className="hidden md:flex flex-row gap-5">
-          {SOCIALS.map(({ link, name, icon: Icon }) => (
-            <Link
-              href={link}
-              target="_blank"
-              rel="noreferrer noopener"
-              key={name}
-            >
-              <Icon className="h-6 w-6 text-white" />
-            </Link>
-          ))}
+        {/* Contact Details (Web) */}
+        <div className="hidden md:flex flex-col gap-1 text-sm text-gray-300">
+          <a href="mailto:arunsubramani1607@gmail.com" className="flex items-center gap-2 hover:text-white transition">
+            <MdEmail className="h-5 w-5" />
+            arunsubramani1607@gmail.com
+          </a>
+          <a href="tel:+919361499299" className="flex items-center gap-2 hover:text-white transition">
+            <MdPhone className="h-5 w-5" />
+            9361499299
+          </a>
         </div>
 
         {/* Hamburger Menu */}
@@ -102,18 +93,16 @@ export const Navbar = () => {
             </Link>
           </div>
 
-          {/* Social Icons */}
-          <div className="flex justify-center gap-6 mt-6">
-            {SOCIALS.map(({ link, name, icon: Icon }) => (
-              <Link
-                href={link}
-                target="_blank"
-                rel="noreferrer noopener"
-                key={name}
-              >
-                <Icon className="h-8 w-8 text-white" />
-              </Link>
-            ))}
+          {/* Contact Details */}
+          <div className="flex flex-col items-center gap-2 mt-6">
+            <a href="mailto:arunsubramani1607@gmail.com" className="flex items-center gap-2 hover:text-white transition">
+              <MdEmail className="h-5 w-5" />
+              arunsubramani1607@gmail.com
+            </a>
+            <a href="tel:+919361499299" className="flex items-center gap-2 hover:text-white transition">
+              <MdPhone className="h-5 w-5" />
+              9361499299
+            </a>
           </div>
         </div>
       )}

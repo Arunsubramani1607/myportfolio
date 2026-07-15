@@ -38,18 +38,13 @@ export const SKILL_DATA = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
+ {
+    skill_name: "Python",
+    image: "python.png",
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
+
   {
     skill_name: "TypeScript",
     image: "ts.png",
@@ -62,18 +57,7 @@ export const SKILL_DATA = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Framer Motion",
-    image: "framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
+
   {
     skill_name: "Node.js",
     image: "node.png",
@@ -143,18 +127,14 @@ export const FRONTEND_SKILL = [
     width: 80,
     height: 80,
   },
+ 
   {
-    skill_name: "Redux",
-    image: "redux.png",
+    skill_name: "Angular",
+    image: "angular.gif",
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
+ 
   {
     skill_name: "TypeScript",
     image: "ts.png",
@@ -171,14 +151,14 @@ export const FRONTEND_SKILL = [
 
 export const BACKEND_SKILL = [
   {
-    skill_name: "Node.js",
-    image: "node.png",
+    skill_name: "Python",
+    image: "python.png",
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Express.js",
-    image: "express.png",
+   {
+    skill_name: "Node.js",
+    image: "node.png",
     width: 80,
     height: 80,
   },
@@ -205,19 +185,7 @@ export const BACKEND_SKILL = [
     image: "mysql.png",
     width: 70,
     height: 70,
-  },
-  {
-    skill_name: "Prisma",
-    image: "prisma.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Graphql",
-    image: "graphql.png",
-    width: 80,
-    height: 80,
-  },
+  }
 ] as const;
 
 export const FULLSTACK_SKILL = [
@@ -227,121 +195,46 @@ export const FULLSTACK_SKILL = [
     width: 70,
     height: 70,
   },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
+  
   {
     skill_name: "Docker",
     image: "docker.png",
     width: 70,
     height: 70,
-  },
-
-  {
-    skill_name: "Figma",
-    image: "figma.png",
-    width: 50,
-    height: 50,
-  },
+  }
 ] as const;
 
 export const OTHER_SKILL = [
-  {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
-  },
+
 ] as const;
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "Defence Projects",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+      'Worked on a defence-focused web application featuring mission planning, drone management, real-time monitoring, and operational dashboards. Developed secure and user-friendly interfaces for managing mission-related data and workflows.',
+    image: "/projects/defence.png",
+    link: "",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "School Management",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+      'Developed a full-stack School Management Web Application to simplify and automate daily school operations. The system manages student records, staff details, attendance, academic information, and administrative activities. Implemented secure user authentication and role-based access for administrators, teachers, and staff. Designed a responsive and user-friendly interface for easy navigation across desktop and mobile devices. Built efficient backend APIs and database integration to ensure reliable data management and smooth application performance.',
+    image: "/projects/school.png",
+    link: "",
   },
   {
-    title: "Space Themed Website",
+    title: "Textile Manufacturing Production Monitoring Website",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
+      'Developed a full-stack textile manufacturing production monitoring website to track and manage production operations across Preparatory, Spinning, and Autoconer sections. The system provides real-time production data, machine efficiency, SEF, stoppage, and performance monitoring. Built interactive dashboards and production reports to identify low-performing machines and improve operational efficiency. Implemented automated shift reports and machine downtime alerts for effective production management.',
+    image: "/projects/gurutex.png",
+    link: "",
   },
 ] as const;
 
 export const FOOTER_DATA = [
-  {
-    title: "Community",
-    data: [
-      {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
-      },
-      {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
-      },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
-    ],
-  },
-  {
-    title: "Social Media",
-    data: [
-      {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://x.com/_sanidhyy",
-      },
-      {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
-      },
-    ],
-  },
-  {
-    title: "About",
-    data: [
-      {
-        name: "Become Sponsor",
-        icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
-      },
-      {
-        name: "Contact Me",
-        icon: null,
-        link: "mailto:contact@example.com",
-      },
-    ],
-  },
+ 
+  
 ] as const;
 
 export const NAV_LINKS = [
